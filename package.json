@@ -1,0 +1,19 @@
+{
+  "name": "usa-official-trails",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "download": "bash ./scripts/download.sh",
+    "process": "ts-node ./scripts/process.ts",
+    "build-tiles": "bash ./scripts/build-tiles.sh",
+    "build": "yarn download && yarn process && yarn build-tiles"
+  },
+  "dependencies": {
+    "@types/geojson": "^7946.0.8",
+    "@types/node": "^17.0.10",
+    "iter-ops": "^1.6.2",
+    "mapshaper": "^0.5.87",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
